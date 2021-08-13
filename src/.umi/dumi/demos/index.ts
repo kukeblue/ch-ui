@@ -43,7 +43,7 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"tsx":"import React from 'react';\nimport { Foo } from 'ch-ui';\n\nexport default () => <Foo title=\"First Demo\" />;"}},"dependencies":{"react":{"version":"17.0.2"},"ch-ui":{}},"componentName":"Foo","identifier":"Foo-demo"},
+    previewerProps: {"sources":{"_":{"tsx":"import React from 'react';\nimport { Foo } from 'ch-ui';\n\nexport default () => <Foo title=\"First Demo\" />;"}},"dependencies":{"react":{"version":"17.0.2"},"ch-ui":{"version":"1.0.0"}},"componentName":"Foo","identifier":"Foo-demo"},
   },
   'ChBlockSelector-demo': {
     component: function DumiDemo() {

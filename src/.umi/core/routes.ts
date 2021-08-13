@@ -57,7 +57,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Foo/index.md",
-          "updatedTime": 1628581836754,
+          "updatedTime": 1628582183000,
           "componentName": "Foo",
           "slugs": [
             {
@@ -80,7 +80,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChBlockSelector/index.md",
-          "updatedTime": 1628581652009,
+          "updatedTime": 1628582183000,
           "slugs": [
             {
               "depth": 2,
@@ -102,7 +102,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChDropdown/index.md",
-          "updatedTime": 1628581652012,
+          "updatedTime": 1628582183000,
           "componentName": "ChDropdown",
           "title": "Dropdown(下拉按钮动画版本)",
           "slugs": [
@@ -125,7 +125,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChForm/index.md",
-          "updatedTime": 1628581652014,
+          "updatedTime": 1628582183000,
           "componentName": "ChForm",
           "title": "Form(表单渲染处理组件)",
           "slugs": [
@@ -148,7 +148,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChGuitarTool/index.md",
-          "updatedTime": 1628581652018,
+          "updatedTime": 1628582183000,
           "componentName": "ChGuitarTool",
           "title": "ChGuitarTool",
           "slugs": [
@@ -171,7 +171,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChLayout/index.md",
-          "updatedTime": 1628581652022,
+          "updatedTime": 1628582183000,
           "componentName": "ChLayout",
           "title": "Layout(管理后台组件)",
           "slugs": [
@@ -194,7 +194,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChMoveBook/index.md",
-          "updatedTime": 1628581652025,
+          "updatedTime": 1628582183000,
           "title": "MoveBook(流动书本动画)",
           "slugs": [
             {
@@ -216,7 +216,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChSortor/index.md",
-          "updatedTime": 1628581652031,
+          "updatedTime": 1628582183000,
           "componentName": "ChSortor",
           "title": "Sortor(箭头排序器)",
           "slugs": [
@@ -239,7 +239,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/ChTablePanel/index.md",
-          "updatedTime": 1628581652037,
+          "updatedTime": 1628582183000,
           "componentName": "ChTablePanel",
           "title": "TablePanel(常规表格组件)",
           "slugs": [
@@ -262,7 +262,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/component/Format/PriceSplit/index.md",
-          "updatedTime": 1628581652044,
+          "updatedTime": 1628582183000,
           "componentName": "PriceSplit",
           "title": "PriceSplit(金额小数点转换器)",
           "slugs": [
@@ -285,7 +285,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1628580888326,
+          "updatedTime": 1628582183000,
           "slugs": [
             {
               "depth": 2,

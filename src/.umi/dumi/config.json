@@ -65,12 +65,6 @@
               "meta": {}
             }
           ]
-        },
-        {
-          "title": "Foo",
-          "path": "/foo",
-          "meta": {},
-          "children": []
         }
       ]
     }

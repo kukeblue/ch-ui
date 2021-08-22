@@ -186,6 +186,7 @@ exportAllMembers?: {
 
 }
 chunks?: string[]
+ignoreNodeBuiltInModules?: boolean
 }
 mountElementId?: ""
 mpa?: {
@@ -285,6 +286,9 @@ debug?: boolean
 sitemap?: {
 hostname?: string
 excludes?: string[]
+}
+apiParser?: {
+
 }
 antd?: {
 dark?: boolean

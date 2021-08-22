@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/Users/huanchen/Project/ch-ui/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,9 +9,9 @@ export function getRoutes() {
   {
     "path": "/~demos/:uuid",
     "layout": false,
-    "wrappers": [require('/Users/huanchen/Project/ch-ui/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
+    "wrappers": [require('/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
     "component": (props) => {
-        const { default: getDemoRenderArgs } = require('/Users/huanchen/Project/ch-ui/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: getDemoRenderArgs } = require('/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
         const { default: Previewer } = require('dumi-theme-default/es/builtins/Previewer.js');
         const { default: demos } = require('@@/dumi/demos');
         const { usePrefersColor } = require('dumi/theme');
@@ -49,38 +49,15 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [require('/Users/huanchen/Project/ch-ui/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/huanchen/Project/ch-ui/node_modules/dumi-theme-default/es/layout.js').default],
+    "wrappers": [require('/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('/Users/huanchen/Project/ch-ui-new/node_modules/dumi-theme-default/es/layout.js').default],
     "routes": [
       {
-        "path": "/foo",
-        "component": require('/Users/huanchen/Project/ch-ui/src/Foo/index.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "src/Foo/index.md",
-          "updatedTime": 1628582183000,
-          "componentName": "Foo",
-          "slugs": [
-            {
-              "depth": 2,
-              "value": "Foo",
-              "heading": "foo"
-            }
-          ],
-          "title": "Foo",
-          "group": {
-            "path": "/foo",
-            "title": "Foo"
-          }
-        },
-        "title": "Foo"
-      },
-      {
         "path": "/component/ch-block-selector",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChBlockSelector/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChBlockSelector/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChBlockSelector/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643868,
           "slugs": [
             {
               "depth": 2,
@@ -98,11 +75,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-dropdown",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChDropdown/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChDropdown/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChDropdown/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643869,
           "componentName": "ChDropdown",
           "title": "Dropdown(下拉按钮动画版本)",
           "slugs": [
@@ -121,11 +98,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-form",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChForm/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChForm/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChForm/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643871,
           "componentName": "ChForm",
           "title": "Form(表单渲染处理组件)",
           "slugs": [
@@ -144,11 +121,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-guitar-tool",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChGuitarTool/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChGuitarTool/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChGuitarTool/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643874,
           "componentName": "ChGuitarTool",
           "title": "ChGuitarTool",
           "slugs": [
@@ -167,11 +144,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-layout",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChLayout/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChLayout/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChLayout/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643878,
           "componentName": "ChLayout",
           "title": "Layout(管理后台组件)",
           "slugs": [
@@ -190,11 +167,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-move-book",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChMoveBook/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChMoveBook/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChMoveBook/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643884,
           "title": "MoveBook(流动书本动画)",
           "slugs": [
             {
@@ -212,11 +189,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-sortor",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChSortor/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChSortor/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChSortor/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643886,
           "componentName": "ChSortor",
           "title": "Sortor(箭头排序器)",
           "slugs": [
@@ -235,11 +212,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/ch-table-panel",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/ChTablePanel/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/ChTablePanel/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/ChTablePanel/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643889,
           "componentName": "ChTablePanel",
           "title": "TablePanel(常规表格组件)",
           "slugs": [
@@ -258,11 +235,11 @@ export function getRoutes() {
       },
       {
         "path": "/component/format/price-split",
-        "component": require('/Users/huanchen/Project/ch-ui/src/component/Format/PriceSplit/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/src/component/Format/PriceSplit/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/component/Format/PriceSplit/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629613643891,
           "componentName": "PriceSplit",
           "title": "PriceSplit(金额小数点转换器)",
           "slugs": [
@@ -281,11 +258,11 @@ export function getRoutes() {
       },
       {
         "path": "/",
-        "component": require('/Users/huanchen/Project/ch-ui/docs/index.md').default,
+        "component": require('/Users/huanchen/Project/ch-ui-new/docs/index.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1628582183000,
+          "updatedTime": 1629612658860,
           "slugs": [
             {
               "depth": 2,

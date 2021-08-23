@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "dumi-lib",
+  "name": "ch-ui",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

@@ -130,9 +130,24 @@ export function useOptionFormListHook(props: useOptionFormListHookProps) {
   };
 }
 
+function useInterval(callback: () => void, delay: number | null) {
+  const savedCallback = useRef(callback);
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+  useEffect(() => {
+    if (delay === null) {
+      return;
+    }
+    const id = setInterval(() => savedCallback.current(), delay);
+    return () => clearInterval(id);
+  }, [delay]);
+}
+
 const chHooks = {
   usePage,
   useOptionFormListHook,
+  useInterval,
 };
 
 export default chHooks;

@@ -12,18 +12,24 @@ import {
   Cascader,
 } from 'antd';
 import { FormInstance } from 'antd/lib/form/hooks/useForm';
-import { UploadOutlined } from '@ant-design/icons';
+import {
+  UploadOutlined,
+  EyeInvisibleOutlined,
+  EyeTwoTone,
+} from '@ant-design/icons';
 import { useForm } from 'antd/lib/form/Form';
 import regionOptions from '../../chutils/regionOptions';
 import './index.less';
 const { Option } = Select;
 export enum FormItemType {
   input = 'input',
+  password = 'password',
   radioGroup = 'radio-group',
   select = 'select',
   upload = 'upload',
   multipleSelect = 'mutipleSelect',
   regionSelect = 'region-select',
+  other = 'other',
 }
 interface FormItemRule {
   validator?: (rule: any, value: any, callback: (v: any) => void) => void;
@@ -58,6 +64,7 @@ export interface FormDataItem {
     span?: number;
     offset?: number;
   };
+  dom?: JSX.Element;
 }
 interface ChFormProps {
   className?: string;
@@ -97,6 +104,16 @@ export default ({
     switch (item.type) {
       case 'input':
         dom = <Input type={item.inputtype} placeholder={item.placeholder} />;
+        break;
+      case 'password':
+        dom = (
+          <Input.Password
+            placeholder={item.placeholder}
+            iconRender={visible =>
+              visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
+            }
+          />
+        );
         break;
       case 'radio-group':
         dom = (
@@ -156,6 +173,9 @@ export default ({
             placeholder={item.placeholder || '请选择地区'}
           />
         );
+        break;
+      case 'other':
+        dom = item.dom;
         break;
       default:
         dom = <Input placeholder={item.placeholder} />;

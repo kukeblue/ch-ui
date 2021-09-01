@@ -38,10 +38,12 @@ export const RequestConfig: {
   config?: Object;
   onRequest?: Function;
   onError?: (e: AxiosError) => void;
+  onResponse?: (data: any) => void;
 } = {
   config: {},
   onRequest: undefined, // 请求数据格式化
   onError: undefined,
+  onResponse: undefined,
 };
 
 export const request = (requestPrams: {
@@ -49,7 +51,7 @@ export const request = (requestPrams: {
   data: any;
   cache?: boolean;
   method?: Method;
-}) => {
+}): Promise<any> => {
   const { url, data, cache, method } = requestPrams;
 
   return new Promise((resolve, reject) => {
@@ -59,7 +61,7 @@ export const request = (requestPrams: {
     }
     const config = {
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
         Auth: user.token,
       },
       method: method || 'post',
@@ -88,9 +90,10 @@ export const request = (requestPrams: {
     axios(config)
       .then(function(response) {
         console.log(`【REQUEST SUCCESS】 返回结果:`, response.data);
-        if (response.data && response.data.status === 0) {
+        if (response.data && cache) {
           setObCache(url, response.data);
         }
+        RequestConfig.onResponse && RequestConfig.onResponse(response.data);
         resolve(response.data);
       })
       .catch(function(error: AxiosError) {

@@ -20,6 +20,7 @@ import {
 import { useForm } from 'antd/lib/form/Form';
 import regionOptions from '../../chutils/regionOptions';
 import './index.less';
+import { Rule } from 'rc-field-form/lib/interface';
 const { Option } = Select;
 export enum FormItemType {
   input = 'input',
@@ -35,6 +36,7 @@ interface FormItemRule {
   validator?: (rule: any, value: any, callback: (v: any) => void) => void;
   required: boolean;
   message: string;
+  type?: string;
 }
 type CheckboxValueType = string | number;
 interface FormItemOptionsType {
@@ -51,7 +53,7 @@ export interface FormDataItem {
   inputtype?: string;
   label: string;
   name: string;
-  rules?: FormItemRule[];
+  rules?: Rule[];
   options?: FormItemOptionsType[];
   initialValue?: any;
   valuePropName?: string;
@@ -67,6 +69,7 @@ export interface FormDataItem {
   dom?: JSX.Element;
 }
 interface ChFormProps {
+  preserve?: boolean;
   className?: string;
   showclear?: boolean;
   submitname?: string;
@@ -81,6 +84,7 @@ interface ChFormProps {
 }
 
 export default ({
+  preserve,
   formData,
   onFinish,
   form,
@@ -184,13 +188,13 @@ export default ({
   };
   const buildFormItemProps = (item: FormDataItem) => {
     item.key = item.key || `formData_${item.name}`;
-    const { inputtype, itemshow, ...ob } = item;
+    const { inputtype, itemshow, layout, dom, ...ob } = item;
     return ob;
   };
 
   return (
     <div className={className}>
-      <Form preserve={false} form={form} {..._layout} onFinish={onFinish}>
+      <Form preserve={preserve} form={form} {..._layout} onFinish={onFinish}>
         <Row>
           {formData &&
             formData.map((item, index) => {
@@ -201,7 +205,10 @@ export default ({
               }
               return (
                 <Col key={formItemProps.key || index} {...layout}>
-                  <Form.Item {...formItemProps}>
+                  <Form.Item
+                    {...formItemProps}
+                    initialValue={item.initialValue}
+                  >
                     {renderFormItem(item)}
                   </Form.Item>
                 </Col>

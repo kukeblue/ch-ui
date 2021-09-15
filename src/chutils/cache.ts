@@ -30,3 +30,9 @@ export const getObCache = (key: string) => {
 export const clearObCache = (key: string) => {
   localStorage.setItem(key, '');
 };
+
+export default {
+  setObCache,
+  getObCache,
+  clearObCache,
+};

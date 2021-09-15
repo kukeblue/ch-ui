@@ -48,12 +48,14 @@ export const RequestConfig: {
 
 export const request = (requestPrams: {
   url: string;
-  data: any;
+  data?: any;
   cache?: boolean;
   method?: Method;
 }): Promise<any> => {
-  const { url, data, cache, method } = requestPrams;
-
+  let { url, data, cache, method } = requestPrams;
+  if (!data) {
+    data = {};
+  }
   return new Promise((resolve, reject) => {
     const user = getObCache('user') || {};
     if (cache && getObCache(url)) {

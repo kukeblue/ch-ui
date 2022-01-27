@@ -1,41 +1,42 @@
 // @ts-nocheck
 import React from 'react';
 import { dynamic } from 'dumi';
-import rawCode1 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChBlockSelector/blockSelector.tsx?dumi-raw-code';
-import rawCode2 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChBlockSelector/blockSelector.less?dumi-raw-code';
-import rawCode3 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChDropdown/index.tsx?dumi-raw-code';
-import rawCode4 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChDropdown/index.less?dumi-raw-code';
-import rawCode5 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChForm/index.tsx?dumi-raw-code';
-import rawCode6 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/regionOptions.ts?dumi-raw-code';
-import rawCode7 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChForm/index.less?dumi-raw-code';
-import rawCode8 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChGuitarTool/index.tsx?dumi-raw-code';
-import rawCode9 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChGuitarTool/index.less?dumi-raw-code';
-import rawCode10 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChLayout/index.tsx?dumi-raw-code';
-import rawCode11 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChLayout/index.less?dumi-raw-code';
-import rawCode12 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChMoveBook/chMoveBook.tsx?dumi-raw-code';
-import rawCode13 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChMoveBook/index.less?dumi-raw-code';
-import rawCode14 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChSortor/index.less?dumi-raw-code';
-import rawCode15 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChSortor/index.tsx?dumi-raw-code';
-import rawCode16 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChTablePanel/index.tsx?dumi-raw-code';
-import rawCode17 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/index.ts?dumi-raw-code';
-import rawCode18 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/chHooks.ts?dumi-raw-code';
-import rawCode19 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/cache.ts?dumi-raw-code';
-import rawCode20 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/request.ts?dumi-raw-code';
-import rawCode21 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/chutils/chFormats.ts?dumi-raw-code';
-import rawCode22 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/ChTablePanel/index.less?dumi-raw-code';
-import rawCode23 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/Format/PriceSplit/index.tsx?dumi-raw-code';
-import rawCode24 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch-ui-new/src/component/Format/PriceSplit/index.less?dumi-raw-code';
+import rawCode1 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChBlockSelector/blockSelector.tsx?dumi-raw-code';
+import rawCode2 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChBlockSelector/blockSelector.less?dumi-raw-code';
+import rawCode3 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChDropdown/index.tsx?dumi-raw-code';
+import rawCode4 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChDropdown/index.less?dumi-raw-code';
+import rawCode5 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChForm/index.tsx?dumi-raw-code';
+import rawCode6 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/regionOptions.ts?dumi-raw-code';
+import rawCode7 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChForm/index.less?dumi-raw-code';
+import rawCode8 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChGuitarTool/index.tsx?dumi-raw-code';
+import rawCode9 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChGuitarTool/index.less?dumi-raw-code';
+import rawCode10 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChLayout/index.tsx?dumi-raw-code';
+import rawCode11 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChLayout/index.less?dumi-raw-code';
+import rawCode12 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChMoveBook/chMoveBook.tsx?dumi-raw-code';
+import rawCode13 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChMoveBook/index.less?dumi-raw-code';
+import rawCode14 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChSortor/index.less?dumi-raw-code';
+import rawCode15 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChSortor/index.tsx?dumi-raw-code';
+import rawCode16 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChTablePanel/index.tsx?dumi-raw-code';
+import rawCode17 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/index.ts?dumi-raw-code';
+import rawCode18 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/chHooks.ts?dumi-raw-code';
+import rawCode19 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/cache.ts?dumi-raw-code';
+import rawCode20 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/request.ts?dumi-raw-code';
+import rawCode21 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/chFormats.ts?dumi-raw-code';
+import rawCode22 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/chutils/chValidator.ts?dumi-raw-code';
+import rawCode23 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/ChTablePanel/index.less?dumi-raw-code';
+import rawCode24 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/Format/PriceSplit/index.tsx?dumi-raw-code';
+import rawCode25 from '!!dumi-raw-code-loader!/Users/huanchen/Project/ch/ch-ui/src/component/Format/PriceSplit/index.less?dumi-raw-code';
 
 export default {
   'ChBlockSelector-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
-  var _slicedToArray2 = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
+  var _slicedToArray2 = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/esm/slicedToArray"));
 
   var _react = _interopRequireWildcard(require("react"));
 
-  var _blockSelector = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChBlockSelector/blockSelector"));
+  var _blockSelector = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChBlockSelector/blockSelector"));
 
   function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -77,13 +78,13 @@ export default {
   },
   'ChDropdown-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChDropdown/index"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChDropdown/index"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/ChDropdown/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/ChDropdown/index.less");
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -102,15 +103,15 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChDropdown from './index';\nimport './index.less'\n\nexport default () => { \n    return <div style={{display: 'flex'}}>\n       <ChDropdown trigger={['click']} itemClassName=\"chDropdown-demo\" text=\"1312312\" menuItems={[{\n           text: '1',\n       }]}/>\n    </div>;}"},"index.tsx":{"import":"./index","content":rawCode3},"index.less":{"import":"./index.less","content":rawCode4}},"dependencies":{"react":{"version":">=16.0.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"@ant-design/icons":{"version":"4.6.3"},"react-dom":{"version":">=16.0.0"}},"componentName":"ChDropdown","identifier":"ChDropdown-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChDropdown from './index';\nimport './index.less'\n\nexport default () => { \n    return <div style={{display: 'flex'}}>\n       <ChDropdown trigger={['click']} itemClassName=\"chDropdown-demo\" text=\"1312312\" menuItems={[{\n           text: '1',\n       }]}/>\n    </div>;}"},"index.tsx":{"import":"./index","content":rawCode3},"index.less":{"import":"./index.less","content":rawCode4}},"dependencies":{"react":{"version":">=16.0.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"@ant-design/icons":{"version":"4.6.3"},"react-dom":{"version":">=16.0.0"}},"componentName":"ChDropdown","identifier":"ChDropdown-demo"},
   },
   'ChForm-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChForm/index.tsx"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChForm/index.tsx"));
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -175,17 +176,17 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChForm from './index.tsx'\nexport default () => { \n    return <div style={{width: '350px'}}>\n        <ChForm\n            formData = {[\n               {\n                  type: 'radio-group',\n                  label: 'label',\n                  name: 'name',\n                  options: [\n                        { label: '上学期', value: 'UP' },\n                        { label: '下学期', value: 'DOWN' },\n                  ]\n               },\n               {\n                  type: 'select',\n                  label: 'label',\n                  name: 'name1',\n                  rules: [],\n                  options: [\n                        { label: '上学期', value: 'UP' },\n                        { label: '下学期', value: 'DOWN' },\n                  ]\n               },\n               {\n                  type: 'region-select',\n                  label: 'label',\n                  name: 'name3',\n               },\n               {\n                  type: 'upload',\n                  label: '上传接口',\n                  name: 'file',\n                  rules: [{ required: true, message: '文件上传失败', validator: \n                    (rule, value, callback) => {\n                        try {\n                            if(value[0].response)  {\n                               if(value[0].response.status == 0) {\n                                 console.log('debug: 单文件上传成功！')\n                               }else {\n                                 callback('文件上传失败！');\n                               }\n                            }\n                        } catch (err) {\n                            callback(err);\n                        }\n                    }\n                  }],\n               }\n            ]}\n            onFinish={(values)=>{\n                console.log('debug: form onFinish values', values)\n            }}\n        />\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6},"index.less":{"import":"./index.less","content":rawCode7}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"@ant-design/icons":{"version":"4.6.3"},"react-dom":{"version":">=16.9.0"}},"componentName":"ChForm","identifier":"ChForm-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChForm from './index.tsx'\nexport default () => { \n    return <div style={{width: '350px'}}>\n        <ChForm\n            formData = {[\n               {\n                  type: 'radio-group',\n                  label: 'label',\n                  name: 'name',\n                  options: [\n                        { label: '上学期', value: 'UP' },\n                        { label: '下学期', value: 'DOWN' },\n                  ]\n               },\n               {\n                  type: 'select',\n                  label: 'label',\n                  name: 'name1',\n                  rules: [],\n                  options: [\n                        { label: '上学期', value: 'UP' },\n                        { label: '下学期', value: 'DOWN' },\n                  ]\n               },\n               {\n                  type: 'region-select',\n                  label: 'label',\n                  name: 'name3',\n               },\n               {\n                  type: 'upload',\n                  label: '上传接口',\n                  name: 'file',\n                  rules: [{ required: true, message: '文件上传失败', validator: \n                    (rule, value, callback) => {\n                        try {\n                            if(value[0].response)  {\n                               if(value[0].response.status == 0) {\n                                 console.log('debug: 单文件上传成功！')\n                               }else {\n                                 callback('文件上传失败！');\n                               }\n                            }\n                        } catch (err) {\n                            callback(err);\n                        }\n                    }\n                  }],\n               }\n            ]}\n            onFinish={(values)=>{\n                console.log('debug: form onFinish values', values)\n            }}\n        />\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6},"index.less":{"import":"./index.less","content":rawCode7}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"@ant-design/icons":{"version":"4.6.3"},"react-dom":{"version":">=16.9.0"}},"componentName":"ChForm","identifier":"ChForm-demo"},
   },
   'ChGuitarTool-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChGuitarTool/index.tsx"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChGuitarTool/index.tsx"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/ChGuitarTool/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/ChGuitarTool/index.less");
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -197,15 +198,15 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChGuitarTool from './index.tsx';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n       <ChGuitarTool/>\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode8},"index.less":{"import":"./index.less","content":rawCode9},"ChForm/index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"},"@ant-design/icons":{"version":"4.6.3"}},"componentName":"ChGuitarTool","identifier":"ChGuitarTool-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChGuitarTool from './index.tsx';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n       <ChGuitarTool/>\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode8},"index.less":{"import":"./index.less","content":rawCode9},"ChForm/index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"},"@ant-design/icons":{"version":"4.6.3"}},"componentName":"ChGuitarTool","identifier":"ChGuitarTool-demo"},
   },
   'ChLayout-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChLayout/index.tsx"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChLayout/index.tsx"));
 
   var _default = function _default() {
     var sider = {
@@ -225,17 +226,17 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"    import React from 'react';\n    import ChLayout from './index.tsx'\n\n    export default () => {\n        let sider = {\n            currentItem: 1,\n            siderItems:[\n                {\n                    icon: '1',\n                    text: '1',\n                    click: ()=>{console.log('1')},\n                }\n            ]\n        }\n        \n        return <ChLayout \n                sider={sider}    \n             >\n             </ChLayout>\n    }\n"},"index.tsx":{"import":"./index.tsx","content":rawCode10},"index.less":{"import":"./index.less","content":rawCode11}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"}},"componentName":"ChLayout","identifier":"ChLayout-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"    import React from 'react';\n    import ChLayout from './index.tsx'\n\n    export default () => {\n        let sider = {\n            currentItem: 1,\n            siderItems:[\n                {\n                    icon: '1',\n                    text: '1',\n                    click: ()=>{console.log('1')},\n                }\n            ]\n        }\n        \n        return <ChLayout \n                sider={sider}    \n             >\n             </ChLayout>\n    }\n"},"index.tsx":{"import":"./index.tsx","content":rawCode10},"index.less":{"import":"./index.less","content":rawCode11}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"}},"componentName":"ChLayout","identifier":"ChLayout-demo"},
   },
   'ChMoveBook-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _chMoveBook = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChMoveBook/chMoveBook"));
+  var _chMoveBook = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChMoveBook/chMoveBook"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/ChMoveBook/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/ChMoveBook/index.less");
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -247,17 +248,17 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChMoveBook from './chMoveBook';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n       <ChMoveBook/>\n    </div>;}"},"chMoveBook.tsx":{"import":"./chMoveBook","content":rawCode12},"index.less":{"import":"./index.less","content":rawCode13}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"}},"identifier":"ChMoveBook-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport ChMoveBook from './chMoveBook';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n       <ChMoveBook/>\n    </div>;}"},"chMoveBook.tsx":{"import":"./chMoveBook","content":rawCode12},"index.less":{"import":"./index.less","content":rawCode13}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"}},"identifier":"ChMoveBook-demo"},
   },
   'ChSortor-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/ChSortor/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/ChSortor/index.less");
 
-  var _index2 = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChSortor/index.tsx"));
+  var _index2 = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChSortor/index.tsx"));
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -277,17 +278,17 @@ export default {
   },
   'ChTablePanel-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireWildcard(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/ChTablePanel/index.tsx"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/ChTablePanel/index.tsx"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/ChTablePanel/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/ChTablePanel/index.less");
 
-  var _chHooks = require("/Users/huanchen/Project/ch-ui-new/src/chutils/chHooks");
+  var _chHooks = require("/Users/huanchen/Project/ch/ch-ui/src/chutils/chHooks");
 
-  var _index3 = require("/Users/huanchen/Project/ch-ui-new/src/component/ChForm/index.tsx");
+  var _index3 = require("/Users/huanchen/Project/ch/ch-ui/src/component/ChForm/index.tsx");
 
   function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -429,17 +430,17 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React, { useRef, useEffect } from 'react';\nimport ChTablePanel from './index.tsx';\nimport './index.less';\nimport { useOptionFormListHook } from '../../chutils/chHooks';\nimport { FormItemType } from '../ChForm/index.tsx';\n\nexport default () => {\n  const { options } = useOptionFormListHook({\n    url: 'http://api-paper.kukechen.top/api/grade/list',\n  });\n\n  const columns = [\n    {\n      title: '年级名称',\n      dataIndex: 'name',\n      key: 'name',\n    },\n  ];\n  const childColumns = [\n    {\n      title: '学期名称',\n      dataIndex: 'name',\n      key: 'name',\n    },\n    {\n      title: '上下学期',\n      dataIndex: 'term',\n      key: 'term',\n    },\n  ];\n  const ref = useRef();\n\n  useEffect(() => {\n    console.log('ref', ref);\n  }, []);\n\n  return (\n    <div className=\"chTablePanel\">\n      <ChTablePanel\n        ref={ref}\n        urlDelete=\"http://localhost:8000/api/grade/delete\"\n        urlAdd=\"http://localhost:8000/api/grade/add\"\n        urlUpdate=\"http://localhost:8000/api/grade/edit\"\n        url=\"http://localhost:8000/api/grade/page\"\n        columns={columns}\n        searchFormData={[\n          {\n            placeholder: '请输入名称',\n            layout: { span: 6 },\n            type: FormItemType.input,\n            label: '名称',\n            name: 'name',\n            rules: [\n              //   { required: true, message: '请输入名称' }\n            ],\n          },\n        ]}\n        formData={[\n          {\n            type: 'input',\n            label: '名称',\n            name: 'name',\n            rules: [{ required: true, message: '请输入年级名称' }],\n          },\n          {\n            type: 'upload',\n            label: '上传接口',\n            name: 'file',\n            rules: [\n              {\n                required: true,\n                message: '文件上传失败',\n                validator: (rule, value, callback) => {\n                  try {\n                    if (value[0].response) {\n                      if (value[0].response.status == 0) {\n                        console.log('debug: 单文件上传成功！');\n                      } else {\n                        callback('文件上传失败！');\n                      }\n                    }\n                  } catch (err) {\n                    callback(err);\n                  }\n                },\n              },\n            ],\n          },\n          {\n            type: 'mutipleSelect',\n            label: '名称',\n            name: 'name',\n            rules: [{ required: true, message: '请输入年级名称' }],\n          },\n        ]}\n        expandable={{\n          expandedRowRender: record => (\n            <div>\n              <ChTablePanel\n                onAddBefore={item => {\n                  item.gradeId = record.id;\n                  console.log(item);\n                }}\n                urlDelete=\"http://localhost:8000/api/gradeStep/delete\"\n                urlAdd=\"http://localhost:8000/api/gradeStep/add\"\n                urlUpdate=\"http://localhost:8000/api/gradeStep/edit\"\n                url=\"http://api-paper.kukechen.top/api/gradeStep/page\"\n                query={{ gradeId: record.id }}\n                columns={childColumns}\n                formData={[\n                  {\n                    type: 'input',\n                    label: '名称',\n                    name: 'name',\n                    rules: [{ required: true, message: '请输入年级名称' }],\n                  },\n                  {\n                    type: 'select',\n                    label: '学期',\n                    name: 'term',\n                    rules: [{ required: true, message: '请选择学期' }],\n                    initialValue: 'UP',\n                    options: [\n                      { label: '上学期', value: 'UP' },\n                      { label: '下学期', value: 'DOWN' },\n                    ],\n                  },\n                ]}\n              />\n            </div>\n          ),\n        }}\n        actions={[\n          {\n            text: '导入',\n            onClick: () => {\n              console.log('点击了导入');\n            },\n          },\n        ]}\n      />\n    </div>\n  );\n};"},"index.tsx":{"import":"./index.tsx","content":rawCode16},"chutils/index.ts":{"import":"../../chutils","content":rawCode17},"chHooks.ts":{"import":"./chHooks","content":rawCode18},"cache.ts":{"import":"./cache","content":rawCode19},"request.ts":{"import":"./request","content":rawCode20},"chFormats.ts":{"import":"./chFormats","content":rawCode21},"ChForm/index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6},"index.less":{"import":"./index.less","content":rawCode22},"chutils/chHooks.ts":{"import":"./chHooks","content":rawCode18}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.12","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"},"axios":{"version":"0.21.1"},"@ant-design/icons":{"version":"4.6.3"}},"componentName":"ChTablePanel","identifier":"ChTablePanel-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React, { useRef, useEffect } from 'react';\nimport ChTablePanel from './index.tsx';\nimport './index.less';\nimport { useOptionFormListHook } from '../../chutils/chHooks';\nimport { FormItemType } from '../ChForm/index.tsx';\n\nexport default () => {\n  const { options } = useOptionFormListHook({\n    url: 'http://api-paper.kukechen.top/api/grade/list',\n  });\n\n  const columns = [\n    {\n      title: '年级名称',\n      dataIndex: 'name',\n      key: 'name',\n    },\n  ];\n  const childColumns = [\n    {\n      title: '学期名称',\n      dataIndex: 'name',\n      key: 'name',\n    },\n    {\n      title: '上下学期',\n      dataIndex: 'term',\n      key: 'term',\n    },\n  ];\n  const ref = useRef();\n\n  useEffect(() => {\n    console.log('ref', ref);\n  }, []);\n\n  return (\n    <div className=\"chTablePanel\">\n      <ChTablePanel\n        ref={ref}\n        urlDelete=\"http://localhost:8000/api/grade/delete\"\n        urlAdd=\"http://localhost:8000/api/grade/add\"\n        urlUpdate=\"http://localhost:8000/api/grade/edit\"\n        url=\"http://localhost:8000/api/grade/page\"\n        columns={columns}\n        searchFormData={[\n          {\n            placeholder: '请输入名称',\n            layout: { span: 6 },\n            type: FormItemType.input,\n            label: '名称',\n            name: 'name',\n            rules: [\n              //   { required: true, message: '请输入名称' }\n            ],\n          },\n        ]}\n        formData={[\n          {\n            type: 'input',\n            label: '名称',\n            name: 'name',\n            rules: [{ required: true, message: '请输入年级名称' }],\n          },\n          {\n            type: 'upload',\n            label: '上传接口',\n            name: 'file',\n            rules: [\n              {\n                required: true,\n                message: '文件上传失败',\n                validator: (rule, value, callback) => {\n                  try {\n                    if (value[0].response) {\n                      if (value[0].response.status == 0) {\n                        console.log('debug: 单文件上传成功！');\n                      } else {\n                        callback('文件上传失败！');\n                      }\n                    }\n                  } catch (err) {\n                    callback(err);\n                  }\n                },\n              },\n            ],\n          },\n          {\n            type: 'mutipleSelect',\n            label: '名称',\n            name: 'name',\n            rules: [{ required: true, message: '请输入年级名称' }],\n          },\n        ]}\n        expandable={{\n          expandedRowRender: record => (\n            <div>\n              <ChTablePanel\n                onAddBefore={item => {\n                  item.gradeId = record.id;\n                  console.log(item);\n                }}\n                urlDelete=\"http://localhost:8000/api/gradeStep/delete\"\n                urlAdd=\"http://localhost:8000/api/gradeStep/add\"\n                urlUpdate=\"http://localhost:8000/api/gradeStep/edit\"\n                url=\"http://api-paper.kukechen.top/api/gradeStep/page\"\n                query={{ gradeId: record.id }}\n                columns={childColumns}\n                formData={[\n                  {\n                    type: 'input',\n                    label: '名称',\n                    name: 'name',\n                    rules: [{ required: true, message: '请输入年级名称' }],\n                  },\n                  {\n                    type: 'select',\n                    label: '学期',\n                    name: 'term',\n                    rules: [{ required: true, message: '请选择学期' }],\n                    initialValue: 'UP',\n                    options: [\n                      { label: '上学期', value: 'UP' },\n                      { label: '下学期', value: 'DOWN' },\n                    ],\n                  },\n                ]}\n              />\n            </div>\n          ),\n        }}\n        actions={[\n          {\n            text: '导入',\n            onClick: () => {\n              console.log('点击了导入');\n            },\n          },\n        ]}\n      />\n    </div>\n  );\n};"},"index.tsx":{"import":"./index.tsx","content":rawCode16},"chutils/index.ts":{"import":"../../chutils","content":rawCode17},"chHooks.ts":{"import":"./chHooks","content":rawCode18},"cache.ts":{"import":"./cache","content":rawCode19},"request.ts":{"import":"./request","content":rawCode20},"chFormats.ts":{"import":"./chFormats","content":rawCode21},"chValidator.ts":{"import":"./chValidator","content":rawCode22},"ChForm/index.tsx":{"import":"./index.tsx","content":rawCode5},"chutils/regionOptions.ts":{"import":"../../chutils/regionOptions","content":rawCode6},"index.less":{"import":"./index.less","content":rawCode23},"chutils/chHooks.ts":{"import":"./chHooks","content":rawCode18}},"dependencies":{"react":{"version":">=16.9.0"},"antd":{"version":"4.16.13","css":"antd/dist/antd.css"},"react-dom":{"version":">=16.9.0"},"axios":{"version":"0.21.1"},"@ant-design/icons":{"version":"4.6.3"}},"componentName":"ChTablePanel","identifier":"ChTablePanel-demo"},
   },
   'PriceSplit-demo': {
     component: function DumiDemo() {
-  var _interopRequireDefault = require("/Users/huanchen/Project/ch-ui-new/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
+  var _interopRequireDefault = require("/Users/huanchen/Project/ch/ch-ui/node_modules/@umijs/babel-preset-umi/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
   var _react = _interopRequireDefault(require("react"));
 
-  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch-ui-new/src/component/Format/PriceSplit/index.tsx"));
+  var _index = _interopRequireDefault(require("/Users/huanchen/Project/ch/ch-ui/src/component/Format/PriceSplit/index.tsx"));
 
-  require("/Users/huanchen/Project/ch-ui-new/src/component/Format/PriceSplit/index.less");
+  require("/Users/huanchen/Project/ch/ch-ui/src/component/Format/PriceSplit/index.less");
 
   var _default = function _default() {
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -453,6 +454,6 @@ export default {
 
   return _react["default"].createElement(_default);
 },
-    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport PriceSplit from './index.tsx';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n        <PriceSplit value={12345}/>\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode23},"index.less":{"import":"./index.less","content":rawCode24}},"dependencies":{"react":{"version":"16.14.0"}},"componentName":"PriceSplit","identifier":"PriceSplit-demo"},
+    previewerProps: {"sources":{"_":{"jsx":"import React from 'react';\nimport PriceSplit from './index.tsx';\nimport './index.less'\n\nexport default () => { \n    return <div style={{width: '350px'}}>\n        <PriceSplit value={12345}/>\n    </div>;}"},"index.tsx":{"import":"./index.tsx","content":rawCode24},"index.less":{"import":"./index.less","content":rawCode25}},"dependencies":{"react":{"version":"16.14.0"}},"componentName":"PriceSplit","identifier":"PriceSplit-demo"},
   },
 };

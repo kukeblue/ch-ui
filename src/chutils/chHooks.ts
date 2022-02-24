@@ -4,6 +4,7 @@ import Ajax, { ChCommonResponse } from './request';
 
 //@type Hook Function 分页Hoos,TS版本
 interface usePageProps {
+  isScroll?: boolean;
   url: string;
   pageSize: number;
   query: Object;
@@ -12,11 +13,10 @@ interface usePageProps {
 
 export function usePage(props: usePageProps) {
   const { url, pageSize, onReloadAfter } = props;
-  const [query, setQuery] = useState<any>(props.query);
   const [status, setStatus] = useState<string>('more');
   const [total, setTotal] = useState<number>(0);
+  const [query, setQuery] = useState(props.query);
   const [list, setList] = useState([]);
-
   const ref = useRef({ pageNo: 1 });
 
   useEffect(() => {
@@ -43,12 +43,16 @@ export function usePage(props: usePageProps) {
       if (pageNo === 1) {
         newList = resp.page.list;
       } else {
-        newList = [].concat(
-          list,
-          resp.page.list.filter((x: any) =>
-            list.find((y: any) => y.id === x.id) ? false : true,
-          ),
-        );
+        if (props.isScroll) {
+          newList = [].concat(
+            list,
+            resp.page.list.filter((x: any) =>
+              list.find((y: any) => y.id === x.id) ? false : true,
+            ),
+          );
+        } else {
+          newList = resp.page.list;
+        }
       }
       setList(newList);
       ref.current.pageNo = pageNo + 1;
@@ -72,9 +76,9 @@ export function usePage(props: usePageProps) {
     status,
     setStatus,
     reload,
+    setQuery,
     loadMore,
     total,
-    setQuery,
   };
 }
 

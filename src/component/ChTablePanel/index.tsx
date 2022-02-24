@@ -21,6 +21,7 @@ interface TablePanelProps {
   };
   onEditFormat?: (item: any) => void;
   onEditBefore?: (item: Item) => void | boolean;
+  onReloadAfter?: (item: any) => void;
   query?: Object;
   actions?: [
     {
@@ -62,15 +63,17 @@ const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
     query,
     onEditBefore,
     onEditFormat,
+    onReloadAfter,
     actions,
     disablePagination,
   } = props;
-  const { list, reload, total, setQuery, status } = ChUtils.chHooks.usePage({
+  const tablePage = ChUtils.chHooks.usePage({
     url: url,
     pageSize: 10,
     query: query || {},
+    onReloadAfter,
   });
-
+  const { list, reload, total, status, setQuery } = tablePage;
   const [form] = useForm();
   const [editor, setEditor] = useState<any>();
   const [showEditModal, setShowEditModal] = useState(false);
@@ -79,7 +82,6 @@ const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
     if (ref) {
       ref.current = {
         status,
-        setQuery,
         total,
         list,
         reload,
@@ -88,7 +90,7 @@ const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
         showEditModal,
       };
     }
-  }, []);
+  }, [list, reload]);
 
   const doDeleteItem = (id: string) => {
     ChUtils.Ajax.request({ url: urlDelete!, data: { id } }).then(
@@ -228,12 +230,6 @@ const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
         columns={_columns}
         expandable={expandable}
         pagination={false}
-        // pagination={{
-        //   total: total,
-        //   defaultCurrent: 1,
-        //   pageSize: 10,
-
-        // }}
       />
       {!disablePagination && (
         <div

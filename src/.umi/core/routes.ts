@@ -266,13 +266,13 @@ export function getRoutes() {
           "slugs": [
             {
               "depth": 2,
-              "value": "Hello dumi!",
-              "heading": "hello-dumi"
+              "value": "README",
+              "heading": "readme"
             }
           ],
-          "title": "Hello dumi!"
+          "title": "README"
         },
-        "title": "Hello dumi!"
+        "title": "README"
       },
       {
         "path": "/component",

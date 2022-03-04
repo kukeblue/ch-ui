@@ -19,10 +19,12 @@ import {
 } from '@ant-design/icons';
 import { useForm } from 'antd/lib/form/Form';
 import regionOptions from '../../chutils/regionOptions';
+import ChDatePicker from '../ChDatePicker/chDatePicker';
 import './index.less';
 import { Rule } from 'rc-field-form/lib/interface';
 const { Option } = Select;
 export enum FormItemType {
+  date = 'date',
   input = 'input',
   password = 'password',
   radioGroup = 'radio-group',
@@ -177,6 +179,9 @@ export default ({
             placeholder={item.placeholder || '请选择地区'}
           />
         );
+        break;
+      case 'date':
+        dom = <ChDatePicker placeholder={item.placeholder || '请输入日期'} />;
         break;
       case 'other':
         dom = item.dom;

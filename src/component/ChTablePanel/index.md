@@ -140,6 +140,7 @@ export default () => {
         actions={[
           {
             text: '导入',
+            loading: true,
             onClick: () => {
               console.log('点击了导入');
             },

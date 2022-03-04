@@ -86,6 +86,7 @@ interface useOptionFormListHookProps {
   url: string;
   query?: Object;
   expiresTime?: number;
+  cache?: boolean;
 }
 
 interface Options {
@@ -100,13 +101,18 @@ export function useOptionFormListHook(props: useOptionFormListHookProps) {
   const [options, setOptions] = useState<Options[]>([]);
   useEffect(() => {
     let cacheKey = url + query.toString();
-    let res = getObCache(cacheKey);
+    let res;
+    if (props.cache) {
+      res = getObCache(cacheKey);
+    }
     if (res) {
       refresh(res);
     } else {
       Ajax.request({ url, data: { query } }).then((res: any) => {
         if (res.status == 0 && res.list) {
-          setObCache(cacheKey, res, props.expiresTime || 0);
+          if (props.cache) {
+            setObCache(cacheKey, res, props.expiresTime || 0);
+          }
           refresh(res);
         }
       });

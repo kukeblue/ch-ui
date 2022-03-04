@@ -25,6 +25,7 @@ interface TablePanelProps {
   query?: Object;
   actions?: [
     {
+      loading?: boolean;
       type?:
         | 'text'
         | 'link'
@@ -47,6 +48,8 @@ type Column = {
   dataIndex: string;
   key: string;
   render?: (text: string, ob: any) => JSX.Element;
+  width?: number | string;
+  fixed?: boolean;
 };
 
 const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
@@ -212,6 +215,7 @@ const chTablePanel = forwardRef((props: TablePanelProps, ref: any) => {
         actions.map((item, index) => {
           return (
             <Button
+              loading={item.loading}
               key={'_' + index}
               style={{ marginLeft: 20 }}
               type={item.type}

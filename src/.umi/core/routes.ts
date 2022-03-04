@@ -74,6 +74,28 @@ export function getRoutes() {
         "title": "MoveBook"
       },
       {
+        "path": "/component/ch-date-picker",
+        "component": require('/Users/huanchen/Project/ch/ch-ui/src/component/ChDatePicker/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/component/ChDatePicker/index.md",
+          "updatedTime": 1645688583871,
+          "title": "MoveBook(流动书本动画)",
+          "slugs": [
+            {
+              "depth": 2,
+              "value": "MoveBook",
+              "heading": "movebook"
+            }
+          ],
+          "group": {
+            "path": "/component",
+            "title": "Component"
+          }
+        },
+        "title": "MoveBook(流动书本动画)"
+      },
+      {
         "path": "/component/ch-dropdown",
         "component": require('/Users/huanchen/Project/ch/ch-ui/src/component/ChDropdown/index.md').default,
         "exact": true,
@@ -262,17 +284,11 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1628582183000,
-          "slugs": [
-            {
-              "depth": 2,
-              "value": "README",
-              "heading": "readme"
-            }
-          ],
-          "title": "README"
+          "updatedTime": 1645686994000,
+          "slugs": [],
+          "title": "Index"
         },
-        "title": "README"
+        "title": "Index"
       },
       {
         "path": "/component",
